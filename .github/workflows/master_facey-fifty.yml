@@ -27,9 +27,8 @@ jobs:
         npm run test --if-present
 
     - name: 'Deploy to Azure Web App'
-      uses: azure/webapps-deploy@v1
+      uses: azure/webapps-deploy@v2
       with:
         app-name: 'facey-fifty'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_dfcf0f39d3e94f019a5d6cd8cd1277d2 }}
-        package: .
