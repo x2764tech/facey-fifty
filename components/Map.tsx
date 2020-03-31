@@ -27,17 +27,25 @@ export default ({segments}: { segments: Segment[] }) => {
             maxZoom={19}
             attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
         />
+        <RL.TileLayer
+            url='http://{s}.tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png'
+            subdomains={["a", "b", "c"]}
+            attribution='Wikimedia Labs | Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+            maxZoom={16}
+            />
         {segments.map(segment =>
             <React.Fragment key={segment.id}>
 
-                <RL.Marker position={[segment.start_latitude, segment.start_longitude]}>
+                {/*<RL.Marker position={[segment.start_latitude, segment.start_longitude]}>
+
+                </RL.Marker>*/}
+                <RL.Polyline
+                    color={segment.athlete_segment_stats.effort_count ? 'lime' : 'black'}
+                    positions={polyline.decode(segment.map.polyline).map(latLngArray => new L.LatLng(latLngArray[0], latLngArray[1]))}>
                     <RL.Popup>
                         {segment.name}
                     </RL.Popup>
-                </RL.Marker>
-                <RL.Polyline
-                    color={segment.athlete_segment_stats.effort_count ? 'lime' : 'black'}
-                    positions={polyline.decode(segment.map.polyline).map(latLngArray => new L.LatLng(latLngArray[0], latLngArray[1]))}/>
+                </RL.Polyline>
             </React.Fragment>
         )
         }

@@ -49,30 +49,11 @@ type RenderedSegment = Segment & {
     number: number;
 }
 
-const Home = ({user, segmentDetails}: HomeProps) => {
-    let allTheDetails = segmentDetails.map(s => ({
-        ...s,
-        number: +s.name.replace(/Facey Fifty - No (\d+) -.+/, (_, number) => number),
-        complete: s.athlete_segment_stats.effort_count > 0,
-        name: s.name.replace(/^\s*Facey Fifty - /, "")
-    }))
-        .sort((a, b) => a.number - b.number);
-
+const List = ({segments}:{segments:RenderedSegment[]}) => {
     const [visible, setVisible] = React.useState<string[]>([]);
-
     return <>
-        <Head>
-            <title>Facey Fifty</title>
-            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-                  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-                  crossOrigin=""/>
-
-            <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-                    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-                    crossOrigin=""/>
-        </Head>
         <style jsx>{`
-            table {
+        table {
                 width: 100%
             }
             td, th {
@@ -85,22 +66,11 @@ const Home = ({user, segmentDetails}: HomeProps) => {
             td.data  {
                 text-align: right;
             }
-            .score {
-                border: 2px solid black;
-                background: blue;
-                padding: 0.5em;
-                display: inline-block;
-                color: white;
-            }
         `}</style>
-        <h1>Hello <span>{user.firstname} {user.lastname}</span> <span
-            className="score">{allTheDetails.filter(_ => _.complete).length}/50</span>
-        </h1>
-        <div style={{position: 'relative'}}>
+
             <Toggle showText={"show map"} hideText={"hide map"}>
-                <Map segments={allTheDetails}/>
+                <Map segments={segments}/>
             </Toggle>
-        </div>
         <table>
             <colgroup>
                 <col width="1"/>
@@ -122,7 +92,7 @@ const Home = ({user, segmentDetails}: HomeProps) => {
             </tr>
             </thead>
             <tbody>
-            {allTheDetails
+            {segments
                 .map(s =>
                     <React.Fragment key={s.id}>
                         <tr
@@ -149,7 +119,7 @@ const Home = ({user, segmentDetails}: HomeProps) => {
                                         scrolling="no"/>
                             </td>
                             <td colSpan={5}>
-                                <Map segments={[s]} />
+                                <Map segments={[s]}/>
                             </td>
                         </tr>
 
@@ -159,6 +129,93 @@ const Home = ({user, segmentDetails}: HomeProps) => {
             }
             </tbody>
         </table>
+    </>;
+};
+
+
+const Home = ({user, segmentDetails}: HomeProps) => {
+    let allTheDetails = segmentDetails.map(s => ({
+        ...s,
+        number: +s.name.replace(/Facey Fifty - No (\d+) -.+/, (_, number) => number),
+        complete: s.athlete_segment_stats.effort_count > 0,
+        name: s.name.replace(/^\s*Facey Fifty - /, "")
+    }))
+        .sort((a, b) => a.number - b.number);
+
+
+    let [filter,setFilter] = React.useState<"all"|"done"|"todo">("all");
+
+    const [visibleSegments,setVisibleSegments] = React.useState(allTheDetails);
+
+    React.useEffect(() => {
+        console.log("Show %s segments", filter);
+        setVisibleSegments(
+            filter === 'all'
+                ? allTheDetails
+                : filter == "done"
+                ? allTheDetails.filter(_ => _.complete)
+                : allTheDetails.filter(_ => !_.complete)
+        )
+    }, [filter]);
+
+    return <>
+        <Head>
+            <title>Facey Fifty</title>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+                  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+                  crossOrigin=""/>
+
+            <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+                    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+                    crossOrigin=""/>
+        </Head>
+        <style jsx>{`
+            h1 {
+                display: inline-block;
+                padding-right: 0.5rem;
+            }
+            .score {
+                border: 2px solid black;
+                background: blue;
+                padding: 0.5em;
+                display: inline-block;
+                color: white;
+            }
+            
+            ul {
+                list-style: none;
+                padding-inline-start: 0;
+                display: inline-block;
+            }
+            
+            ul li {
+                list-style: none;
+                display: inline
+            }
+            ul li input[type=radio] {
+                display: none;
+            }
+            ul li label {
+                padding: 0.5rem;
+                border: 2px solid blue;
+                border-right-width: 0;
+            }
+            ul li:last-child label {
+                border-right-width: 2px;
+            }
+            ul li label.active {
+                background-color: blue;
+                color: white;
+            }
+        `}</style>
+        <h1>Hello <span>{user.firstname} {user.lastname}</span> <span className="score">{allTheDetails.filter(_ => _.complete).length}/50</span></h1>
+        <ul>
+            <li><label className={filter==="all"?"active":""}><input type="radio" checked={filter==="all"} onClick={() => setFilter("all")}/> All</label></li>
+            <li><label className={filter==="todo"?"active":""}><input type="radio" checked={filter==="todo"} onClick={() => setFilter("todo")}/> Todo</label></li>
+            <li><label className={filter==="done"?"active":""}><input type="radio" checked={filter==="done"} onClick={() => setFilter("done")}/> Done</label></li>
+        </ul>
+        {' '}
+        <List segments={visibleSegments}/>
     </>;
 };
 
