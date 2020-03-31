@@ -2,6 +2,22 @@ import * as React from 'react';
 import {GetServerSideProps} from 'next';
 import stravaApi, {Strava} from 'strava-v3';
 import segments from '../segments.json';
+import Segment from '../Segment';
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
+
+function Loader({error, isLoading, pastDelay,}: {
+    error?: Error | null;
+    isLoading?: boolean;
+    pastDelay?: boolean;
+    timedOut?: boolean;
+}) {
+    if (error !== null && error !== undefined) return <p>{error.message}</p>;
+    if (isLoading) return <p>Loading...</p>;
+    return null;
+}
+
+const Map = dynamic(import('../components/Map'), {ssr: false, loading: Loader});
 
 const refresh = require('passport-oauth2-refresh');
 
@@ -20,95 +36,131 @@ function formatTime(totalSeconds: number) {
     return `${minutes}:${(seconds < 10 ? '0' : '')}${seconds}`;
 }
 
-interface Segment {
-    id: string;
-    name: string;
-    activity_type: "Ride" | "Run";
-    distance: number;
-    average_grade: number
-    maximum_grade: number
-    elevation_high: number
-    elevation_low: number
-    start_latlng: number[]
-    end_latlng: number[]
-    start_latitude: number
-    start_longitude: number
-    end_latitude: number
-    end_longitude: number
-    climb_category: 0 | 1 | 2 | 3 | 4 | 5
-    city: string
-    state: string
-    country: string
-    private: boolean
-    hazardous: boolean
-    starred: boolean
-    created_at: Date
-    updated_at: Date
-    total_elevation_gain: number
-    map: { id: string, polyline: string, resource_state: number },
-    effort_count: number
-    athlete_count: number
-    star_count: number
-    athlete_segment_stats: { pr_elapsed_time: number, pr_date: Date, effort_count: number }
+const Toggle = ({showText, hideText, children}: React.PropsWithChildren<{showText:string, hideText: string}>) => {
+    const [isHidden, setIsHidden] = React.useState(true);
+    return <>
+            <button onClick={() => setIsHidden(!isHidden)}>{isHidden?showText:hideText}</button>
+            {!isHidden&&children}
+        </>
+};
+
+type RenderedSegment = Segment & {
+    complete: boolean;
+    number: number;
 }
 
-const Home = ({user, segmentDetails}: HomeProps) => <>
-    <style jsx>{`
-        table {
-            width: 100%
-        }
-        td, tr {
-            padding: 0.25rem 0.5rem;
-        }
-        a {
-        color: blue;
-        text-decoration: none;
-        }
-        td.data  {
-            text-align: right;
-        }
-    `}</style>
-    <h1>Hello <span>{user.firstname} {user.lastname}</span></h1>
-    <table>
-        <colgroup>
-            <col/>
-            <col className="data"/>
-            <col className="data"/>
-            <col className="data"/>
-            <col className="data"/>
-            <col className="data"/>
-        </colgroup>
-        <thead>
-        <tr>
-            <td/>
-            <th>Climb</th>
-            <th>Distance</th>
-            <th>Avg Grade</th>
-            <th>Your time</th>
-            <th>Number of attempts</th>
-        </tr>
-        </thead>
-        <tbody>
-        {segmentDetails.map(s => ({...s, number: +s.name.replace(/Facey Fifty - No (\d+) -.+/, (_, number) => number)}))
-            .sort((a, b) => a.number - b.number)
-            .map(s =>
-                <tr key={s.id}
-                    style={{backgroundColor: s.athlete_segment_stats.effort_count ? 'lightgreen' : 'lightred'}}>
+const Home = ({user, segmentDetails}: HomeProps) => {
+    let allTheDetails = segmentDetails.map(s => ({
+        ...s,
+        number: +s.name.replace(/Facey Fifty - No (\d+) -.+/, (_, number) => number),
+        complete: s.athlete_segment_stats.effort_count > 0,
+        name: s.name.replace(/^\s*Facey Fifty - /, "")
+    }))
+        .sort((a, b) => a.number - b.number);
 
-                    <td><a href={`https://www.strava.com/segments/${s.id}`}
-                           target="_blank">{s.name.replace(/^\s*Facey Fifty - /, "")}</a></td>
-                    <td className="data">{Math.ceil((s.elevation_high - s.elevation_low) * 3.28084)}ft</td>
-                    <td className="data">{(s.distance * 0.0006213712).toFixed(2)} miles</td>
-                    <td className="data">{s.average_grade}%</td>
-                    <td className="data">{formatTime(s.athlete_segment_stats.pr_elapsed_time)}</td>
+    const [visible, setVisible] = React.useState<string[]>([]);
 
-                    <td className="data">{s.athlete_segment_stats.effort_count}</td>
-                </tr>
-            )
-        }
-        </tbody>
-    </table>
-</>;
+    return <>
+        <Head>
+            <title>Facey Fifty</title>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+                  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+                  crossOrigin=""/>
+
+            <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+                    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+                    crossOrigin=""/>
+        </Head>
+        <style jsx>{`
+            table {
+                width: 100%
+            }
+            td, th {
+                padding: 0.25rem 0.5rem;
+            }
+            a {
+            color: blue;
+            text-decoration: none;
+            }
+            td.data  {
+                text-align: right;
+            }
+            .score {
+                border: 2px solid black;
+                background: blue;
+                padding: 0.5em;
+                display: inline-block;
+                color: white;
+            }
+        `}</style>
+        <h1>Hello <span>{user.firstname} {user.lastname}</span> <span
+            className="score">{allTheDetails.filter(_ => _.complete).length}/50</span>
+        </h1>
+        <div style={{position: 'relative'}}>
+            <Toggle showText={"show map"} hideText={"hide map"}>
+                <Map segments={allTheDetails}/>
+            </Toggle>
+        </div>
+        <table>
+            <colgroup>
+                <col width="1"/>
+                <col/>
+                <col className="data"/>
+                <col className="data"/>
+                <col className="data"/>
+                <col className="data"/>
+                <col className="data"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <td/>
+                <th>Climb</th>
+                <th>Distance</th>
+                <th>Avg Grade</th>
+                <th>Your time</th>
+                <th>Number of attempts</th>
+            </tr>
+            </thead>
+            <tbody>
+            {allTheDetails
+                .map(s =>
+                    <React.Fragment key={s.id}>
+                        <tr
+                            style={{backgroundColor: s.complete ? 'lightgreen' : 'lightred'}}>
+                            <td>
+                                <button
+                                    onClick={() => setVisible(e => visible.includes(s.id) ? e.filter(_ => _ !== s.id) : [...e, s.id])}>{visible.includes(s.id) ? '🔼' : '🔽'}</button>
+                            </td>
+                            <td><a href={`https://www.strava.com/segments/${s.id}`}
+                                   target="_blank">{s.name}</a></td>
+                            <td className="data">{Math.ceil((s.elevation_high - s.elevation_low) * 3.28084)}ft</td>
+                            <td className="data">{(s.distance * 0.0006213712).toFixed(2)} miles</td>
+                            <td className="data">{s.average_grade}%</td>
+                            <td className="data">{formatTime(s.athlete_segment_stats.pr_elapsed_time)}</td>
+
+                            <td className="data">{s.athlete_segment_stats.effort_count}</td>
+                        </tr>
+                        {visible.includes(s.id) &&
+                        <tr>
+                            <td colSpan={2}>
+                                <iframe style={{width: "100%", height: "450px"}}
+                                        src={`https://veloviewer.com/segments/${s.id}/embed?default2d=y&units=i`}
+                                        frameBorder="0"
+                                        scrolling="no"/>
+                            </td>
+                            <td colSpan={5}>
+                                <Map segments={[s]} />
+                            </td>
+                        </tr>
+
+                        }
+                    </React.Fragment>
+                )
+            }
+            </tbody>
+        </table>
+    </>;
+};
 
 
 export const getServerSideProps: GetServerSideProps<HomeProps> = async ({req}) => {
@@ -131,7 +183,7 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async ({req}) =
 
     // @ts-ignore
     const strava = new stravaApi.client(accessToken) as Strava;
-    const segmentDetails = await Promise.all(segments.map(_ => strava.segments.get({id: _.id})));
+    const segmentDetails = await Promise.all(segments.map(_ => strava.segments.get({id: _.id}).then(segment => ({...segment, ..._}))));
 
     // @ts-ignore
     return {props: {user: req.user, segmentDetails}};

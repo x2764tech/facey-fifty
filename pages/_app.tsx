@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../site.css';
-
 interface MyAppProps {
     Component: React.ComponentType;
     pageProps: {};
