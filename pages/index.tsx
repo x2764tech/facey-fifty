@@ -77,7 +77,6 @@ const Home = ({user, segmentDetails}: HomeProps) => <>
             <col className="data"/>
             <col className="data"/>
             <col className="data"/>
-            <col className="data"/>
         </colgroup>
         <thead>
         <tr>
@@ -85,7 +84,6 @@ const Home = ({user, segmentDetails}: HomeProps) => <>
             <th>Climb</th>
             <th>Distance</th>
             <th>Avg Grade</th>
-            <th>Max Grade</th>
             <th>Your time</th>
             <th>Number of attempts</th>
         </tr>
@@ -102,7 +100,6 @@ const Home = ({user, segmentDetails}: HomeProps) => <>
                     <td className="data">{Math.ceil((s.elevation_high - s.elevation_low) * 3.28084)}ft</td>
                     <td className="data">{(s.distance * 0.0006213712).toFixed(2)} miles</td>
                     <td className="data">{s.average_grade}%</td>
-                    <td className="data">{s.maximum_grade}%</td>
                     <td className="data">{formatTime(s.athlete_segment_stats.pr_elapsed_time)}</td>
 
                     <td className="data">{s.athlete_segment_stats.effort_count}</td>
