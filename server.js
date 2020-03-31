@@ -5,6 +5,7 @@ const refresh = require('passport-oauth2-refresh');
 const next = require('next');
 const bodyParser = require('body-parser');
 const expressSession = require('express-session');
+const logging = require('morgan');
 
 const stravaStrategy = new passportOAuth2({
         authorizationURL: 'https://www.strava.com/oauth/authorize',
@@ -39,11 +40,12 @@ function authenticationMiddleware() {
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
-const app = next({dev});
+const app = next({dev,});
 const handle = app.getRequestHandler();
 
 const server = express();
 
+server.use(logging('combined'));
 server.use(express.static('public'));
 server.use(bodyParser.urlencoded({extended: false}));
 server.use(expressSession({secret: 'keyboard cat', resave: true, saveUninitialized: false}));
