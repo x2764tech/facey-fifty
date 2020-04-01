@@ -32,6 +32,7 @@ export default ({segments}: { segments: Segment[] }) => {
             subdomains={["a", "b", "c"]}
             attribution='Wikimedia Labs | Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
             maxZoom={16}
+            opacity={0.4}
             />
         {segments.map(segment =>
             <React.Fragment key={segment.id}>
