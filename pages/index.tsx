@@ -36,12 +36,12 @@ function formatTime(totalSeconds: number) {
     return `${minutes}:${(seconds < 10 ? '0' : '')}${seconds}`;
 }
 
-const Toggle = ({showText, hideText, children}: React.PropsWithChildren<{showText:string, hideText: string}>) => {
+const Toggle = ({showText, hideText, children}: React.PropsWithChildren<{ showText: string, hideText: string }>) => {
     const [isHidden, setIsHidden] = React.useState(true);
     return <>
-            <button onClick={() => setIsHidden(!isHidden)}>{isHidden?showText:hideText}</button>
-            {!isHidden&&children}
-        </>
+        <button onClick={() => setIsHidden(!isHidden)}>{isHidden ? showText : hideText}</button>
+        {!isHidden && children}
+    </>
 };
 
 type RenderedSegment = Segment & {
@@ -49,8 +49,9 @@ type RenderedSegment = Segment & {
     number: number;
 }
 
-const List = ({segments}:{segments:RenderedSegment[]}) => {
+const List = ({segments}: { segments: RenderedSegment[] }) => {
     const [visible, setVisible] = React.useState<string[]>([]);
+    // language=CSS
     return <>
         <style jsx>{`
         table {
@@ -66,11 +67,23 @@ const List = ({segments}:{segments:RenderedSegment[]}) => {
             td.data  {
                 text-align: right;
             }
+            
+            .extra-info { 
+                display: inline-block 
+            }
+            
+            @media only screen and (max-width: 500px) {
+                .extra-info {
+                    display: block;
+                    margin: 0 auto 0.5rem;
+                }
+            }
+            
         `}</style>
 
-            <Toggle showText={"show map"} hideText={"hide map"}>
-                <Map segments={segments}/>
-            </Toggle>
+        <Toggle showText={"show map"} hideText={"hide map"}>
+            <Map segments={segments}/>
+        </Toggle>
         <table>
             <colgroup>
                 <col width="1"/>
@@ -112,15 +125,12 @@ const List = ({segments}:{segments:RenderedSegment[]}) => {
                             <td className="data">{s.athlete_segment_stats.effort_count}</td>
                         </tr>
                         {visible.includes(s.id) &&
-                        <tr>
-                            <td colSpan={2}>
-                                <iframe style={{width: "100%", height: "450px"}}
-                                        src={`https://veloviewer.com/segments/${s.id}/embed?default2d=y&units=i`}
-                                        frameBorder="0"
-                                        scrolling="no"/>
-                            </td>
-                            <td colSpan={5}>
-                                <Map segments={[s]}/>
+                        <tr className="showInline">
+                            <td colSpan={7}>
+                                <div className="extra-info segment-details">
+                                <iframe height='405' width='590' frameBorder='0' allowTransparency={true} scrolling='no'
+                                        src={`https://www.strava.com/segments/${s.id}/embed`}/>
+                                </div>
                             </td>
                         </tr>
 
@@ -144,9 +154,9 @@ const Home = ({user, segmentDetails}: HomeProps) => {
         .sort((a, b) => a.number - b.number);
 
 
-    let [filter,setFilter] = React.useState<"all"|"done"|"todo">("all");
+    let [filter, setFilter] = React.useState<"all" | "done" | "todo">("all");
 
-    const [visibleSegments,setVisibleSegments] = React.useState(allTheDetails);
+    const [visibleSegments, setVisibleSegments] = React.useState(allTheDetails);
 
     React.useEffect(() => {
         console.log("Show %s segments", filter);
@@ -209,11 +219,18 @@ const Home = ({user, segmentDetails}: HomeProps) => {
                 color: white;
             }
         `}</style>
-        <h1>Hello <span>{user.firstname} {user.lastname}</span> <span className="score">{allTheDetails.filter(_ => _.complete).length}/50</span></h1>
+        <h1>Hello <span>{user.firstname} {user.lastname}</span> <span
+            className="score">{allTheDetails.filter(_ => _.complete).length}/50</span></h1>
         <ul>
-            <li><label className={filter==="all"?"active":""}><input type="radio" checked={filter==="all"} onClick={() => setFilter("all")}/> All</label></li>
-            <li><label className={filter==="todo"?"active":""}><input type="radio" checked={filter==="todo"} onClick={() => setFilter("todo")}/> Todo</label></li>
-            <li><label className={filter==="done"?"active":""}><input type="radio" checked={filter==="done"} onClick={() => setFilter("done")}/> Done</label></li>
+            <li><label className={filter === "all" ? "active" : ""}><input type="radio" checked={filter === "all"}
+                                                                           onClick={() => setFilter("all")}/> All</label>
+            </li>
+            <li><label className={filter === "todo" ? "active" : ""}><input type="radio" checked={filter === "todo"}
+                                                                            onClick={() => setFilter("todo")}/> Todo</label>
+            </li>
+            <li><label className={filter === "done" ? "active" : ""}><input type="radio" checked={filter === "done"}
+                                                                            onClick={() => setFilter("done")}/> Done</label>
+            </li>
         </ul>
         {' '}
         <List segments={visibleSegments}/>
