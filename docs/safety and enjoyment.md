@@ -1,0 +1,7 @@
+---
+title: Safety and Enjoyment
+---
+
+Your safety is paramount so I strongly recommend that you wear a helmet at all times whilst cycling and observe the Highway Code and rules of the road. There are some difficult junctions on the climbs so proceed with care at all times and give way where appropriate. I really hope you enjoy the climbs and please feel free to mark in your book your evaluation of the hill. You can grade them if you wish or simply jot a few notes of how you felt and what the hill meant to you. Enjoy cycling and hopefully pass this enjoyment onto your children, grandchildren or friends so that they can also get the benefits from this wonderful exercise and pastime. 
+
+Yorkshire is a wonderful county in which to cycle and the area where I live and have chosen as the basis for my book gives a cyclist plenty of opportunities to climb hills. The Tour de Yorkshire came here in 2015 and will visit again in 2017 and is about to or has used a few of these climbs. For those of you of a competitive nature, you can judge yourself against other local riders and also some international professionals by looking at the “Strava” segments forsome of these climbs. One example of the large number of people tackling some of our climbs is that of Holme Moss, used by the Tour De France in 2014, which has attracted over 13,800 “Strava” attempts!! Please ENJOY. Why not come along and watch the Tour de Yorkshire usually taking place at the very beginning of May.

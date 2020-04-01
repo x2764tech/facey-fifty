@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="post">
+  <ol class="route-nav">
+  {% if page.previous %}
+    <li class="route-nav-previous"><a href="{{page.previous.url}}">{{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next %}
+    <li class="route-nav-next"><a href="{{page.next.url}}">{{page.next.title}}</a></li>
+  {% endif %}
+  </ol>
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+  <dl class="route-stats">
+      <dt>Ascent</dt>
+      <dd>{{page.ascent}}</dd>
+      <dt>Distance</dt>
+      <dd>{{page.distance}}</dd>
+      <dt>Average Gradient</dt>
+      <dd>{{page.gradient}}</dd>
+      <dt>Map Ref</dt>
+      <dd>{{page.map_ref}}</dd>
+  </dl>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {%- if page.segment_id %}
+  <div>
+  <iframe height='405' style="width: 100%;" frameBorder='0' allowtransparency="true" scrolling='no' src="https://www.strava.com/segments/{{ page.segment_id }}/embed"></iframe>
+  </div>
+  {%- endif %}
+</article>

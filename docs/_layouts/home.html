@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <h2>The climbs</h2>
+  <ol>
+  {% for route in site.the_routes %}
+    <li><a href="{{route.url}}">{{ route.title }}</a></li>
+  {% endfor %} 
+  </ol>
+
+  {%- if page.after -%}
+  {{ page.after | markdownify }}
+  {%- endif -%}
+
+</div>
