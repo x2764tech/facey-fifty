@@ -30,7 +30,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 collections:
   the_routes:
       output: true
-      permalink: /climbs/:name
+      permalink: /climbs/:title.html
 
 defaults:
   -
