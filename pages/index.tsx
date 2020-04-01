@@ -84,6 +84,7 @@ const List = ({segments}:{segments:RenderedSegment[]}) => {
             <thead>
             <tr>
                 <td/>
+                <td/>
                 <th>Climb</th>
                 <th>Distance</th>
                 <th>Avg Grade</th>
