@@ -21,18 +21,19 @@ export default ({segments}: { segments: Segment[] }) => {
     const minLongitude = Math.min(...segments.map(_ => Math.min(_.start_longitude, _.end_longitude)));
 
     return <RL.Map bounds={[[minLatitude, minLongitude], [maxLatitude, maxLongitude]]}>
+        {/*
+        https://a.tile.openstreetmap.org/${z}/${x}/${y}.png https://b.tile.openstreetmap.org/${z}/${x}/${y}.png https://c.tile.openstreetmap.org/${z}/${x}/${y}.png
+        */}
         <RL.TileLayer
-            url='https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png'
+            url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+            subdomains={["a", "b", "c"]}
             minZoom={1}
             maxZoom={19}
-            attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
         />
         <RL.TileLayer
-            url='http://{s}.tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png'
-            subdomains={["a", "b", "c"]}
+            url='https://tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png'
             attribution='Wikimedia Labs | Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
             maxZoom={16}
-            opacity={0.4}
             />
         {segments.map(segment =>
             <React.Fragment key={segment.id}>
