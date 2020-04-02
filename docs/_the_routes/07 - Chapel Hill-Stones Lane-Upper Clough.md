@@ -3,7 +3,7 @@ ascent: 328ft
 distance: 0.9 miles
 gradient: 7%
 segment_id: 18571451
-title: No 7 - ChapelHill/ Stones Lane/Upper Clough 
+title: No 7 - Chapel Hill/ Stones Lane/Upper Clough 
 map_ref: SE 095 142
 ---
 
