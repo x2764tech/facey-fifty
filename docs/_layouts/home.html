@@ -12,7 +12,7 @@ layout: default
   <h2>The climbs</h2>
   <ol>
   {% for route in site.the_routes %}
-    <li><a href="{{ route.url | relative_url }}">{{ route.title }}</a></li>
+    <li><a href="{{ route.url | relative_url }}">{{ route.title }}</a> - {{ route.distance }}, {{ route.ascent }}, {{ route.gradient }}</li>
   {% endfor %} 
   </ol>
 
