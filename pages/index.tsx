@@ -1,10 +1,10 @@
 import * as React from 'react';
-import {GetServerSideProps} from 'next';
 import stravaApi, {Strava} from 'strava-v3';
 import segments from '../segments.json';
 import Segment from '../Segment';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
+import {IncomingMessage} from 'http';
 
 function Loader({error, isLoading, pastDelay,}: {
     error?: Error | null;
@@ -237,31 +237,42 @@ const Home = ({user, segmentDetails}: HomeProps) => {
     </>;
 };
 
+interface Session {
+    segmentDetails: Segment[];
+    passport: {
+        user: User;
+    }
+}
+interface User {
+    accessToken: string;
+    refreshToken: string;
+}
 
-export const getServerSideProps: GetServerSideProps<HomeProps> = async ({req}) => {
+type ServerSideProps = {props:HomeProps};
+export const getServerSideProps = async ({req}:{req:IncomingMessage&{session:Session,user:User}}):Promise<ServerSideProps> => {
+
+            const {accessToken, refreshToken} = await new Promise((resolve, reject) => {
+                const currentRefreshToken = req.user.refreshToken;
+                refresh.requestNewAccessToken('strava', currentRefreshToken, (err: { statusCode: number; data?: any }, accessToken: string, refreshToken: string) => {
+                        err ? reject(err) : resolve({accessToken, refreshToken})
+                    }
+                )
+            });
+
+            req.session.passport.user.accessToken = accessToken;
+            req.session.passport.user.refreshToken = refreshToken;
 
 
-    const {accessToken, refreshToken} = await new Promise((resolve, reject) => {
-        // @ts-ignore
-        const currentRefreshToken = req.user.refreshToken;
-        refresh.requestNewAccessToken('strava', currentRefreshToken, (err: { statusCode: number; data?: any }, accessToken: string, refreshToken: string) => {
-                err ? reject(err) : resolve({accessToken, refreshToken})
-            }
-        )
-    });
+            // @ts-ignore
+            const strava = new stravaApi.client(accessToken) as Strava;
+            let segmentDetails = await Promise.all(
+                segments.map(_ =>
+                    strava.segments.get({id: _.id})
+                        .then(segment => ({...segment, ..._}))
+                )
+            );
 
-    // @ts-ignore
-    req.session.passport.user.accessToken = accessToken;
-    // @ts-ignore
-    req.session.passport.user.refreshToken = refreshToken;
-
-
-    // @ts-ignore
-    const strava = new stravaApi.client(accessToken) as Strava;
-    const segmentDetails = await Promise.all(segments.map(_ => strava.segments.get({id: _.id}).then(segment => ({...segment, ..._}))));
-
-    // @ts-ignore
-    return {props: {user: req.user, segmentDetails}};
+    return {props: {user: req.user, segmentDetails }};
 };
 
 export default Home;
