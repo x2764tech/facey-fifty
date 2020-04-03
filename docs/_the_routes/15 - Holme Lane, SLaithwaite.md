@@ -1,5 +1,5 @@
 ---
-title: No 15 - Holme Lane, SLaithwaite 
+title: No 15 - Holme Lane, Slaithwaite 
 distance: 1.2 miles 
 ascent: 493ft
 map_ref: SE 078 140
@@ -11,18 +11,7 @@ As you can see from the map reference the road is only one hundred yards from th
 previous climb and again starts very steeply under the same railway viaduct, (a very
 impressive viaduct might I say) just a different arch. The climb incorporates the V9914 hill
 climb course as used by the Huddersfield Star Wheelers, the only difference is that this time
-you
-go
-a little
-bit
-further
-and
-finish at
-The Rose and
-Crown
-public
-house,
-(another
+you go a little bit further and finish at The Rose and Crown public house, (another
 opportunity to partake in liquid refreshments)!! Anyone would think I was a drinker! For
 anyone that knows me that is totally untrue, but why shouldn’t you take in some local
 tipple?

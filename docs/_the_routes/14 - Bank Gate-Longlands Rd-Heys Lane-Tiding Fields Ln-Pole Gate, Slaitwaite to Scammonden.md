@@ -17,7 +17,6 @@ before (what you might think is the top) the road levels out as it follows the c
 the hillside. Grab a splendid view to your left before the final small amount of climbing up to
 the Old Chapel at Scammonden, now residential apartments. You have a choice of two pubs
 to grab some refreshments just a matter of yards further over the brow of the hill. Enjoy!!
-No 14) Bank Gate, Slaithwaite
 
 
 
