@@ -40,15 +40,18 @@
        
        let mapBounds = myMap.getBounds();
        for(var i = 0; i < routes.length; ++i) {
-           const layer = L.polyline(polyline.decode(routes[i].polyline), {color: 'red'});
+           const layer = L.polyline(polyline.decode(routes[i].polyline), { color: 'grey', weight: 3 });
            mapBounds.extend(layer.getBounds());
            layer.addTo(myMap);
            layer.bindPopup("<a href='"+routes[i].url+"'>" + routes[i].title + "</a>")
            layer.on('popupopen', () => {
+               layer.setStyle({color: 'red', weight: 5, opacity: 1 });
                myMap.fitBounds(layer.getBounds());
            });
            layer.on('popupclose', () => {
+               layer.setStyle({color: 'grey', weight: 3 });
                myMap.fitBounds(mapBounds);
+               
            });
        }
        myMap.fitBounds(mapBounds, { padding: [5, 5], animate: false });
