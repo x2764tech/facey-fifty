@@ -1,0 +1,14 @@
+---
+---
+[
+    {% for route in site.the_routes %}
+      {
+        "title": {{ route.title | jsonify }},
+        "content": {{ route.content | strip_html | jsonify }},
+        "html": {{ route.content | jsonify }},
+        "extract": {{ route.content | strip_html | truncatewords: 30 | jsonify }},
+        "url": {{ route.url | relative_url | jsonify }}
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]
