@@ -1,4 +1,5 @@
 ---
+polyline: 'm_ifIbymJO\UHu@p@cAj@SPk@`@c@`@mAh@W`@EDs@Xc@DI?GCYSi@Wy@WYEg@Yq@MmAq@SWEO?QF]PQL]BMCS]]k@e@OIQSi@MOOs@[[I[MUEk@CcA?[Gy@]y@s@_@QSCe@CUBWCm@BaCAUAMCSD[L]Fi@B]C[BSL_ANIFQF]Vs@^W\OVOh@ILs@v@e@v@Y\k@l@a@PmANYAYEe@U_@]}AsBq@iAKUQy@UgEMcAg@mBQiBI_@q@kBg@}@_@a@g@a@_@SYSSUgAkB]{@'
 title: No 12 - Clough Road/Slaithwaite Gate, Slaithwaite
 ascent: 645ft
 distance: 1.4 miles

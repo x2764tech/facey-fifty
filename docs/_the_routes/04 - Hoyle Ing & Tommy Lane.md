@@ -3,6 +3,7 @@ ascent: 228ft
 distance: 0.3 miles
 gradient: 14%
 segment_id: 18571525
+polyline: 'gaifIbaiJADIq@d@K\FDEDODu@Ta@BSDEBUNi@BSLKHSH[d@iAH]XYNYL_@\s@^g@FQ^c@d@QL?DBWCBYJYN{@E[W]WKMQa@yA?eAMyBB[CY'
 title: No 4 - Hoyle Ing & Tommy Lane, Linthwaite
 map_ref: SE 097 145
 ---

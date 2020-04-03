@@ -1,4 +1,5 @@
 ---
+polyline: 'stffIbisJSTQh@KHWUAGBj@G@GA_@JMHE?]\UFO?Y^[R[XIPq@ZIC[]]o@]mA[}@EYS_@Kc@A_@KYO{@Sc@MuAIIc@EECSDCCMBSEk@uAIMMGGAKHATFz@?l@Jd@@NEj@EPKPSBUAg@@_BVe@LIDm@bA_D~D'
 title: No 16 - White Hill/Shaw Field Lane, West Slaithwaite
 ascent: 369ft
 distance: 0.6 miles

@@ -1,4 +1,5 @@
 ---
+polyline: 'ex}eIpm|IPnAIf@HZET?nAPp@Ff@BdALtA@`@Hp@@f@Rv@Lr@DjCH`@K|@Jt@Az@BxACJ@NGZEn@BnAJb@@NAt@@`@G~@@\Fb@@`@Aj@@b@BPEz@Gb@AlAKd@GrAENBLEZM^ILEDE?UPIRSt@CRIXUtAs@~BWl@g@fB]|@k@|@c@d@M\wAhCs@~Bi@pAMj@KVk@t@KVCNBj@Ff@EbAIh@Fv@?xAEv@@lA'
 title: No 38 - Upperthong Lane, Holmfirth 
 ascent: 421ft
 distance: 0.9 miles

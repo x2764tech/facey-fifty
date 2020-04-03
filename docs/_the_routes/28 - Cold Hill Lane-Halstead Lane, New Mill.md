@@ -1,4 +1,5 @@
 ---
+polyline: 'se_fIluuIm@GSB]EG@MAABWJo@Da@?i@NYRs@x@WP]Li@Xy@t@S`@SRMDw@Do@EYDk@IOISC]?s@Ja@CICa@q@Qe@c@g@Wk@AIJmA^kBAMCCO?EEOUQCmAq@gAs@}@gAiB}CMIYCI@oAc@U@QIO_@Gg@OY{@w@SIUSKYE]Ka@CsAESM{BMw@DqAEyAKmAI[}@aA]k@aBqDyAiE'
 title: No 28 - Cold Hill Lane/Halstead Lane, New Mill
 ascent: 358ft
 distance: 1.5 miles

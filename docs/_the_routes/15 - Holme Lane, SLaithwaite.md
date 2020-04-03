@@ -1,4 +1,5 @@
 ---
+polyline: 'ochfIteoJGh@C`@G\w@bBKl@CdAGT?RMpAL|BBVFNBd@Jt@JzB?z@Ev@e@~BGn@OdCChADj@GvA?v@HtACd@BnADj@`@vATxAFxAFf@@dBRbAR~ANrB?~ARbDPz@Zx@Lj@Fl@@`@Ev@D~@CV@~ADtA@fBFzA?~@KhCD`ANl@ZtBFlBHhAHb@L^b@x@L^NhAFdA?~AQ~EGb@QbA]t@W`@Wp@WvAEdA@p@FD|@e@hBi@TB'
 title: No 15 - Holme Lane, Slaithwaite 
 distance: 1.2 miles 
 ascent: 493ft

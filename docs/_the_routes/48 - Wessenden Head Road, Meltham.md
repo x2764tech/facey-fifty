@@ -1,4 +1,5 @@
 ---
+polyline: 'acbfInmhJFRfAnAjCxDbBhCx@~Af@lAJPX|@LT|@bCpAlEDZ\bBZpA^tBbAxHp@`HpAxG\pBNhBVpELhAVbBjA~Fd@nCl@hCTpAlApDr@hB\vARjAf@|DPhA^`BjB`FfA`Cb@tA\xAt@bCb@p@XVXP\H`@Dh@INGXSzAcCX_@f@a@`A[ZCT@f@Bb@Jh@Pn@d@XX`@j@|CbFv@dAbAjAj@h@nCxBx@`AXb@n@pAnBlFp@tAbAfB`BnCb@x@pEpHb@x@d@dAdCzH'
 title: No 48 - Wessenden Head Road, Meltham
 ascent: 906ft
 distance: 2.2 miles

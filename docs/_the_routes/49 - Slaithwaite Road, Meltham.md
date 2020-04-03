@@ -1,4 +1,5 @@
 ---
+polyline: 'mqbfI~rhJKTOx@GbEObGOrCETQn@a@`A}@xAe@hAWb@i@hB}@rBy@lCi@rAa@~@a@t@cApCOXiApCc@j@]n@yAzDi@|@_@dAGJi@bBUb@s@hB_AtDmAxDu@pCgB|HcAxEw@nCw@zCkAfEa@nAcB~Ei@rAY~@G^q@hCg@bB'
 title: No 49 - Slaithwaite Road, Meltham
 ascent: 387ft
 distance: 1.2 miles

@@ -3,6 +3,7 @@ ascent: 506ft
 distance: 1.0 miles
 gradient: 14%
 segment_id: 18572259
+polyline: 'whifI|siJc@NQ?KDS?a@]e@MMIMMQWWi@YSWDk@n@OVo@BUEMGK]HCEGIe@[m@OGIGuAm@q@]Y@[HUJ[PYVe@RSPITYLIFARKv@Mh@GFgATo@BUHEAKBy@B[FMFYn@GDM\Oj@c@d@QTSr@c@fAGb@Sp@S`AS~ASpCKxDAjBBzACjAQnAKb@Sl@Kx@^jDBj@Jx@Fv@\bD?Vp@xG'
 title: No 5 - Lowestwood Lane, Linthwaite/Copley Bank, Bolster Moor
 map_ref: SE 097 148
 ---

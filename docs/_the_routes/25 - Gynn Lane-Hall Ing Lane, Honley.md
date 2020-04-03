@@ -1,4 +1,5 @@
 ---
+polyline: 'qodfIbv{Ic@cAe@o@}@aAmAiAm@g@aAgAg@g@Qi@Ki@KqCGs@@qESs@W[a@m@Qa@Gc@?QeA[Ey@@eAUcCCu@@mBEgB@iAN{@h@cBTc@bAuAXUbAi@d@Ib@w@f@yAh@sBAKTYn@m@dAuAbBiD\m@f@_@^SZWXa@bAoAZs@P{@Nc@Zg@LMJCRQHOPq@PQDOJo@d@yA`@mB\wBZuDNeA?_@TmCRiAPqA^iFBi@Fk@X_BLi@z@wCTcAb@oCFsAEoA?uDB{F'
 title: No 25 - Gynn Lane/Hall Ing Lane, Honley
 ascent: 563ft
 distance: 1.5 miles

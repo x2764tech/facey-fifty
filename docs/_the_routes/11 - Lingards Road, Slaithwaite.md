@@ -1,4 +1,5 @@
 ---
+polyline: 'elgfIjtoJ@PZp@p@pCh@`Ad@d@dCdAf@Zb@LnA~@b@h@z@dBxAhFx@bBHFXFHC\Al@LT?f@B~@QPGbBw@n@c@XKzA}@l@OT?^D`@LpAbAp@^dB^V@z@Pn@Hh@JfAn@v@|@PLTAPCp@ARFJH'
 title: No 11 - Lingards Road, Slaithwaite 
 ascent: 381ft
 distance: 0.8 miles

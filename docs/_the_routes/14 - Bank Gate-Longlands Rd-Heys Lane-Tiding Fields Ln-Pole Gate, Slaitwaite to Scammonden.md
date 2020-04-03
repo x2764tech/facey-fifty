@@ -1,4 +1,5 @@
 ---
+polyline: '_dhfIhynJM\Y`@ALUVEPSPSXMHANYVMPwBrEUt@[j@UbBmApD{@tRg@hFEn@aAxIqBpJmBlGg@xB]vBY~@g@vBs@~BS`@UTk@V_BL{@RoAh@u@LYASOISUsBUeAO}@c@oBG_@Am@EYISQUKGY?c@DYCYQu@q@e@UkAGUBSJSb@cAbFc@hDWvAK^c@r@_@\WFk@FSCeA]QAU^GXMbAKb@c@`@MFa@AgAOUAe@MeAAoAWq@KiFiAeAa@q@a@eC_A{@c@_Aq@[_@c@]'
 title: No 14 - Bank Gate/Longlands Rd/Heys Lane/Tiding Fields Ln/Pole Gate, Slaitwaite to Scammonden
 ascent: 663ft
 distance: 1.8 miles

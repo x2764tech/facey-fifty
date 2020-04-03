@@ -1,4 +1,5 @@
 ---
+polyline: 'yg{eIxkbJjArBAFLn@\pA\`BRd@d@bDXhDH`C?|AFtB@vAf@~B@^^zED^Pl@^`Ad@`AdBfBhB~Bz@|AnAvCz@rC^zAr@nBh@jBj@pA^p@f@~A\pAbAjExA~EJpAAr@Xt@Px@l@v@~@n@h@l@~@lAjB~Ch@t@N^bA`EjB|KZfCFdAAFBfALvA@vADb@z@`Dv@dBV^n@p@hBbAbA\~@JNCJMFSFkA@kAB]Je@JQRGJBLFl@d@PDPGTQTs@P_A`@}DR{ATiAL_@PWVMRFXj@|ChVPbALl@Pj@LTPTNDT@VIJGNQ`@o@r@w@^WZMj@CVBp@?t@F`@HbBrAV^h@`AlDrHZf@jApATZrElI|AtBPPz@d@b@R`@Tj@j@TLd@Jn@Dn@Ar@I`AYnA}@\O\Kf@Eh@D\FFCDSMa@DVRj@l@ZtBpAh@^f@p@`@t@n@`A|@`B'
 title: No 44 - Holme Moss, Holmbridge
 ascent: 1102ft
 distance: 3.0 miles

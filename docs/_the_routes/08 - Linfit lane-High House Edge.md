@@ -3,6 +3,7 @@ ascent: 330ft
 distance: 1.1 miles
 gradient: 5.5%
 segment_id: 18572285
+polyline: 's`hfIx}lJRa@NMRIP@RK`Ax@RJRBj@GbAHR?HCb@Sr@g@~@Yj@IRMDOEi@Mm@@WJ[l@i@LE\?j@Vd@d@VAVMj@cAZ_@PMt@}@BM?QKoAE}CC_C@aCLwAl@yBJm@HaA?mBSeGCiEB}BHsCH_BZ{CLu@\kA`A}B~BaF~@qAfFsFX_@'
 title: No 8 - Linfit Lane-High House Edge
 map_ref: SE 084 139
 ---

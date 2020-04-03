@@ -3,6 +3,7 @@ ascent: 380ft
 distance: 1.8 miles
 gradient: 6%
 segment_id: 18571387
+polyline: 'o`kfIzudJV~@j@^FPR`BVz@v@pEPh@P^^f@d@t@DLTJHLNX@HV^Px@l@~A`@~ATn@Zp@PRP\t@|ARPRFjAlALFX?LRhAjBRVVl@PRl@hAbAbBr@h@FBNTf@xAHX|@pBn@p@`AvAxArD|@|ALP`C|Bv@`A^\xA`APHz@p@TJ`@Xz@\xDrBd@\|ArB`C|Bn@f@rCfB~Bb@bAJrBr@n@\rEjA`@Tv@Zr@p@bAv@tDhCd@P~@Tl@H~ACj@Hr@Nt@Fn@TbCp@xBd@lCVL?HEXYVg@'
 title: No 3 - Cowlersley Lane, Cowlersley
 map_ref: SE 113 157
 ---

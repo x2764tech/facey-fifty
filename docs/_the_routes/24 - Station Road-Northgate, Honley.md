@@ -1,4 +1,5 @@
 ---
+polyline: 'mvdfId}{IG]Qs@k@kA[c@w@s@c@k@][Mk@Qg@Io@O]c@m@q@mAY_AYs@EUUa@u@e@e@k@e@GWFMDy@v@SLYj@u@r@k@p@[LGNS?_@OE@CWYc@YS_@o@aBeB_@]IAGIKm@TaB?c@LuAFWBcADm@Au@D{@Wu@KaAUq@_@q@}CiAy@e@M]GWGwB]wBCmADaBAi@Bo@?i@R{CDwBBe@GmB'
 title: No 24 - Station Road/Northgate, Honley 
 ascent: 353ft
 distance: 1.0 miles

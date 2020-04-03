@@ -1,4 +1,5 @@
 ---
+polyline: 's~|eItj_Jh@@TETJHNEVEpAUzCAZDd@HBp@@`@HRHZd@d@|@Lp@ENk@`@e@Tg@LaBNUHEHEJMv@I`AKvBM^o@t@QJMr@[~@Gh@Aj@QvB]zB]~AY|@u@~Aa@pBWXc@^IPQnCCrBBNJd@Bn@c@hCEdFOpAAdAYvCUzAWvBg@pCQtAK|ACjA?rDH~@Nd@JPb@h@f@`@LVRHd@CN@b@VT\XdAJhAVbBJXrAnCf@rA~@|B'
 title: No 40 - Woodside View/Shaw Lane/Booth House Lane, Burnlee, Holmfirth
 ascent: 412ft
 distance: 1.2 miles

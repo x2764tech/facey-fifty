@@ -1,4 +1,5 @@
 ---
+polyline: 'kn{eIzebJI\Et@Gd@JrGC~@Kp@GJIZQZI^Wh@KZCVSv@Ef@@tCRvAHz@CxAUhESdBMbBWxBCb@BvDKlGA~BBvA?z@YvB[pAKTa@`@w@Xo@LWJ_@\Ul@eA|EMd@MPEFk@Z]@iAUUOu@eAQEQ@a@FO?_@MYQCO?g@E[?y@Es@I{DEUGIQGKAw@Pg@Nm@Lg@B_AJk@Bk@IUMmAgASIUH]d@mBfBw@h@e@NY@i@Cc@Eu@Ui@Ya@Y'
 title: No 43 - Field End Lane, via Digley reservoir, Holmbridge
 ascent: 495ft
 distance: 1.3 miles

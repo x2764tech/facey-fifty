@@ -1,4 +1,5 @@
 ---
+polyline: 'ic|eIzs`JBvAEjDMhCKr@g@n@_@t@_AvAe@lA_@t@IZGp@i@jC[rA[bAWJe@BMHEDKXUXm@hA]`AOt@GbAClA@~CDd@Nt@DdAIt@q@nAUx@SzAM|A?^@`@LlAT|DJhAB|@Gv@Qp@Mp@AXBdATdAVz@b@~@l@`A\p@`@hAb@|CA\MVk@|AE\Qt@A`@BjCDx@XtA\|BDp@AZQfA_@nAm@bCKPc@p@{@|@W`@CJIx@?nAGn@K`@Wl@o@pAYnAYrBm@dFUrAQzAgBzKKj@Wn@y@|ASh@G\[hDSjDGrDBvBK\eC|@UDuAb@'
 title: No 41 - Yew Tree Lane/Flush House Lane, Burnlee
 ascent: 602ft
 distance: 1.9 miles

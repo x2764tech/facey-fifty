@@ -1,4 +1,5 @@
 ---
+polyline: 'e`_fIhxuI`@aALa@R_@NMp@w@^Yl@[JMF[BYTaATe@BK`@{CH{@F_Cd@cEPgAFs@GwEPgE\yCHe@ZiATqA@c@Lu@VeDHgCVgEJw@@aAA}DM}BI{@BqBAkBGcBM{AGkCF}Ah@aFJsBIcBk@{FKiBQyFBmDOsB[gBK}@s@}CW}AWs@o@gCm@}Ca@sC@M'
 title: No 30 - Penistone Road A635, New Mill
 distance: 1.4 miles 
 ascent: 493ft

@@ -3,6 +3,7 @@ ascent: 240ft
 distance: 0.4 miles
 gradient: 11%
 segment_id: 18571345
+polyline: '{`kfI|ubJVP`@CHEv@CD@ZADDT^DN`@vA?JVpAXv@hA~Df@lAP^RXx@~@Z`@P^NRn@jA~AtBVTXNNBLCRYP]l@_@v@a@TU'
 title: No 1 - Deep Lane, Milnsbridge
 map_ref: SE 119 157
 ---

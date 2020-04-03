@@ -1,4 +1,5 @@
 ---
+polyline: 'c{{eIhy`J`@DDDlBfBRVN\n@fCVp@^h@RHXDlADh@DVC`@KH@PE`@MTEXINK`@KB@v@GZEZKVUJORk@D[NMN]JIx@Wf@YNQVDZOXBLANGH?PKf@IJGf@a@XMf@EFI@CCOm@o@W]IUOc@]cBIw@GUI[[c@MYy@gDEYDo@VkBFiADKTSXMVIDGKID@G?KQABz@\PEj@U|@QjAIrAE\@VE@@'
 title: No 42 - Dobb Lane/Woodhouse Lane, Hinchliffe Mill
 ascent: 471ft
 distance: 0.9 miles

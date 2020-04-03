@@ -1,4 +1,5 @@
 ---
+polyline: '{wcfI|uwJMjAGh@?RETKfAK^En@Ah@Bn@Cv@NpBUlAKv@On@Kt@?lAEb@CJWXQfAMzBMd@OzAEpG?nCA\QfBa@|AQ`@e@xA{@fBI`@Oj@cAfCi@pCM~@o@zCo@zEOlBa@rD_@`JMrG@zGLlD@~HI|BWrDQrF?`BLnAVnAf@hAHLh@h@f@ZXLRFlAR`A?p@C|@MxAK~@DdE~@dAXrBTl@B|@ChAGnFQnBCpCOzAApAEtABhC\`C^~FnArDj@p@FfAVbBj@rAr@dAt@dAfAb@j@l@z@r@lAdAbCj@zAtAdD`C`GvEbLdEhKjApDb@bB~A|G'
 title: No 20 - Manchester Road, Marsden 
 ascent: 674ft
 distance: 3 miles

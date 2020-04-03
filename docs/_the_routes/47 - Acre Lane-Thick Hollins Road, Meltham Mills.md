@@ -1,4 +1,5 @@
 ---
+polyline: 'kcbfI|_fJR`@r@vBfAzBxAxDv@fARTXPd@b@\TLPTJ`Bd@^FTDV?PGZ[lA}B`AmB^o@`@a@bA}@tFqEhAc@jAU|B{@hAs@d@c@v@i@z@y@|@gAp@_AbBqC`CqEdBwCdCgDlByBnCmCzBoBpDmC~@q@zBoArBaAtBy@^Ix@Mb@E`CCtBDbFb@`@D`@J'
 title: No 47 - Acre Lane/Thick Hollins Road, Meltham Mills
 ascent: 549ft
 distance: 1.6 miles

@@ -1,4 +1,5 @@
 ---
+polyline: 'gz}eIxy{I@KLYCIZs@Lk@Xq@tA{BrBmD~@uAjAsAl@cAZ_@ZIz@c@l@MTMHKRMxAYr@IJGfA]d@FrBg@|@]VG`BWxAMd@O|ADjAC`@EREdAc@POJO`@KTKHGLALKp@I`AARET?j@OPMNSj@uAf@o@p@uARYX[r@UlAORA|ASVDpDvAzT~Hh@Xn@NfCpAzBrAt@^`@Jl@Fb@I`@Qr@_@f@e@'
 title: No 36 - Dunford Road, Holmfirth 
 ascent: 538ft
 distance: 1.5 miles

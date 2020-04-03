@@ -1,4 +1,5 @@
 ---
+polyline: 'wy}eIrw{ICMHDBABQDADkBRo@Sa@H_@KMLq@HS\QFWAm@BOPWAWHIJYT[DUAKBGTg@f@s@l@k@^{APUPETMZe@Re@BQ?OCk@EMCQ?WDEXER?h@Gf@YZy@XiAbAuCt@uEXcEHs@FwBG_D@s@R_Bf@eBDa@JYBo@Ha@R]BOPQ@gAC_@'
 title: No 35 - South Lane/Cinderhills Rd, Holmfirth 
 ascent: 301ft
 distance: 0.7 miles

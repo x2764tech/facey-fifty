@@ -1,4 +1,5 @@
 ---
+polyline: 'cq|eIh~tI@OK}@Cu@DcA?eAEMECG?oAd@u@Ty@B[D]TY~@EDGAGKAQKcBEOKQECg@KIKEMQ_AGcAGcDDwBDc@FUj@oAZ}@d@}CNm@ReAHQl@aARm@|@oBPkADgAJm@@m@WiCIoCHABc@Da@EMNw@Jy@b@wBHw@?oACK?i@Eu@@{EIqAFKJId@I|@Ib@ONW^gA\g@d@_@b@U^KN@VGVAXKp@w@T]'
 title: No 32 - V9912 Jackson Bridge Hill Climb, South View/Staley Royd Lane, Jackson Bridge
 distance: 1.0 miles 
 ascent: 515ft

@@ -3,6 +3,7 @@ ascent: 214ft
 distance: 0.4 miles
 gradient: 10%
 segment_id: 18571490
+polyline: 'wrhfI|yiJDCNYdAg@rAqAl@g@Z]Ji@PqCDoBFcB^kDNYDUDq@Fa@IeBUiAKw@Q{@Ku@c@{@AKGICMUo@i@wBWQUc@Mm@WoBY{@[k@'
 title: No 6 - Hoyle House/Causeway Side, Linthwaite
 map_ref: SE 095 144
 ---

@@ -1,4 +1,5 @@
 ---
+polyline: 'edbfIh_fJMo@Go@@a@Hg@^wAXaBBgBBa@A}AGgA@_ACa@Om@@EK]C?MQ_@GMEOUGAEYUy@KQIIQ_@UoAAUIq@Qi@AQIm@Gy@BGCQ'
 title: No 46 - Knowle Lane, Meltham Mills 
 ascent: 193ft
 distance: 0.3 Miles

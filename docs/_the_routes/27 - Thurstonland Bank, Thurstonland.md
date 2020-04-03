@@ -1,4 +1,5 @@
 ---
+polyline: 'awafIzlxI^YTg@Z_CFuADQn@wBVmA\gA|@sDNwAH{ALcAPmE?_@I_Ak@eAU}@W]Ki@MQm@kAuAeFO{@QgD?oFEgAWyCUeBImAUcBCoB@cAHiBAiADmD'
 title: No 27 - Thurstonland Bank, Thurstonland
 ascent: 367ft
 distance: 0.8 miles

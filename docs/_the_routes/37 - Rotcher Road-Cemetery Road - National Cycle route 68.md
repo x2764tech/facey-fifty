@@ -1,4 +1,5 @@
 ---
+polyline: 'iy}eIh}{IH^@`@DNLPJVXVNj@p@v@ZRFBt@ALCLKPCNDVZLd@RX`Bz@bAv@^n@Lb@Ff@TvAhA`Cd@t@\Zz@`@PPTNXr@~@zAfAdCf@v@`@ZPBv@B`@PHb@X~@ZvBJh@h@lBLXnAfCVXTTtA~B^`@NZXb@hBxD^p@v@bATFFCRU\m@PSd@[zBk@J?JFNLRZx@vBZd@hBtDfCtEn@rA^j@f@r@TJXR~DrD~@fA\t@TXlDpEj@d@LFf@\tArA`Az@rBfAd@PbAf@dBl@rCp@bF~Ab@DtB\~@BjAPpAFPD~@d@LB\?xC_Br@Ut@c@bA]`CcA|Ai@bCeAb@KvAm@NEx@_@nCcA`Bq@`Ba@^Gr@Gd@M\@j@E`C]fGq@f@IrAOv@Ef@I\QRSPUd@_An@eBn@uBXs@t@oAjA}C\kA|@oBVkALaBRqA^_BPiAVgC?c@'
 title: No 37 - Rotcher Road/Cemetery Road - National Cycle route 68
 ascent: 895ft
 distance: 3.0 miles

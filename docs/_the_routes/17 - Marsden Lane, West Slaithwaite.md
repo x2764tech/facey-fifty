@@ -1,4 +1,5 @@
 ---
+polyline: '}gffIfwtJfAxBFTDT@\GXEd@@PH`@?XMz@ATH~@FRCNRr@CNCBMCQBMICAKQGCM@[XQYOA]TUB[KgA?c@G_@DSG[BaAXeALa@Ag@Hg@PULYHa@EKMES]We@?GCWAqANa@Ec@@UEMEQ?MIc@a@Sw@q@]q@OYQ[]FsB@wAQcCw@uCWu@Gc@IcAUyA_@qAOYk@y@IS_@_@SMgBo@SL'
 title: No 17 - Marsden Lane, West Slaithwaite
 ascent: 379ft
 distance: 1.3 miles

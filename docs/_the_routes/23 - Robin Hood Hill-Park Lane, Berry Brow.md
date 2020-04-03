@@ -1,4 +1,5 @@
 ---
+polyline: 'qigfIl~|IFOx@iAHITIn@q@ZQTCFBX@VJV@b@RNPF@h@EPGVS\G|@EA@RKVCV?JEH@LMLUBO?e@Ke@?[UcAIyCIgB?c@c@iBM}@@eADq@H_@v@uBDSHi@?{@Kg@EI}@oAi@_A[gAKw@U_A?QQe@CsBIaAQe@e@u@EWQqBG[MwAg@mBs@wBg@_A@Mh@e@DQ'
 title: No 23 - Robin Hood Hill/Park Lane, Berry Brow
 ascent: 344ft
 distance: 0.8 miles

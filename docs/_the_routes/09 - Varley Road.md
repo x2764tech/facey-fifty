@@ -3,6 +3,7 @@ ascent: 342ft
 distance: 1.0 miles
 gradient: 6.4%
 segment_id: 18571590
+polyline: 'cxgfIppnJN@FOPu@NqAPe@RKn@QPDFIb@[FGZGTSPAXE\ABEXFR?f@FLE\DXEZ@b@EJDfALj@@XA|@@d@HTHbALn@Vn@L\NR@f@T`Ah@r@l@l@^RDR@HBHHh@HHGJ?^GTBl@Pn@Cb@Gd@Ab@BTHZDr@ChDAjG`@hDHjBEr@MH?tATt@CRDl@BLBNH'
 title: No 9 - Varley Road, Slaithwaite
 map_ref: SE 079 138
 ---

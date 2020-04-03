@@ -1,4 +1,5 @@
 ---
+polyline: 'arhfIzonJqAfAIXw@b@w@Xk@De@As@L_@Lk@VOLMPSJMBYCg@M[Oe@a@a@IW?_@JUL[^Y~@ObAg@pCUr@k@v@IPKJc@r@ORc@TiB`Du@xAwA~AGHAJ{@vAIVE\CdCTxDCXMJMFSAm@OY?KH_@H]@a@E_@AILA\F`@DvBGd@OXAVET'
 title: No 13 - Meal Hill Lane, Slaithwaite
 ascent: 472ft
 distance: 0.8 miles

@@ -1,4 +1,5 @@
 ---
+polyline: 'wngfIhs_Jn@hAj@|AFf@Nb@Jh@@XNb@?JDRlA`EXl@RnAxB|ERZpA`DzAzEb@hBt@hBPl@Zh@RRnBnBt@j@RRFJd@d@fAdBlAlCjDlLdAvCxBjKtAvJlAvG~ArFd@pAHf@Dh@C`AWv@uAnAiBhAwAr@'
 title: No 50 - Meltham Road/Church Lane, Netherton
 ascent: 352ft
 distance: 1.2 miles

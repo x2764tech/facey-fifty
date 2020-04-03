@@ -3,6 +3,7 @@ ascent: 782ft
 distance: 2.5 miles
 gradient: 6%
 segment_id: 18572319
+polyline: 'ktkfIzwcJCbEFtD?`DL~AAZ@^JhAd@dCHlAd@lDD|ABRHbCGlBGb@AnBOd@g@f@GTCXWtIRtFFbAd@|El@hFv@rFXhCJh@Ph@x@rBz@`D`@xBZbDDfAP~@Hx@C|@I\ONIV@z@Jx@H|A`@`FPbAFz@?n@G`CUx@Ih@IjEBvBQlDg@|Cg@xBU^[Hg@IkA_@mBOWJON]|@St@Q|@QjAIxAKz@?r@I~B?r@GjD@~AI~ANdCA|@SvDMfAOrEGr@Kr@IFOVg@d@U\i@lA]b@Sb@IVG`@Aj@RnAFlAN~ARdIX`ELf@ZbAXvAz@dDjAzFH~@LrC@fBEr@q@|@kBlBe@r@a@hA_@|Ae@lCY|CGlAAz@LlCTvAn@hB`@t@jArB'
 title: No 2 - Scar Lane, Milnsbridge
 map_ref: SE 115 160
 ---

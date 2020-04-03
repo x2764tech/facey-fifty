@@ -1,4 +1,5 @@
 ---
+polyline: '_`jfI~k}I?YIs@@wAXmAHUJ_@TsAJ[PaARi@D[NoAA_@Fc@Aa@Dg@H]Bi@Ru@RgBX_AAWTwA?OPk@FGJw@R_Ar@sBHgAZo@FIHSLQ~ASVOTSFa@@_@NILo@PaACK\iAb@gAJ_@v@mCf@eCFk@\cBB_@La@Dk@?g@MwAA}@QyBGc@k@yCc@oCUiB@[DY^uAVwANa@d@g@XUNSd@aAHa@RURQT_@TQ\M|@B\]\i@NMj@mAPi@r@{ARw@Bw@@sAEq@Ba@Ck@Z{BAg@Gw@?m@BUBARFV\d@pAZl@v@|Bj@bAv@bAlDvDbD|CxA`BJDFC|@cC\{A?MRoANoCGo@UyAyAkCc@m@c@e@U][[KAABCb@CVSRWf@ELMp@Jn@J^?L'
 title: No 21 - Lockwood Scar/Jackroyd Lane, Lockwood to Castle Hill
 distance: 1.7 miles 
 ascent: 553ft

@@ -1,4 +1,5 @@
 ---
+polyline: 'su}eIrs|IJrALfAZbET`C\xBb@pEx@fG^tDPbAHp@Bh@XvBBn@TrAD\BvA?nBEt@_@tBWt@QdAa@|AOdASvBObCGrDGxGEv@DrF?tGIpCKzAOxAcApHAVOrAiAhI[~CMx@oBrHY|BCv@`@pEHtABxA?tEIzKSzFWlEKh@W`AI|@Ih@a@~A]jBu@bCu@vBu@fCQjA@lAFx@Hh@vArHRdB`@jFnCz`@b@zERdBzAtHtDtQlAtGf@`DXtCp@tLj@|MZlIF~C`@pd@F`CHrBpA`Vt@`KXvC\zCNnAb@`CpAnKn@nFx@bI|CrWz@tFvBhLlCxKtAbFN~@'
 title: No 39 - Greenfield Road, A635 Holmfirth
 ascent: 955ft
 distance: 4.1 miles
