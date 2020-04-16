@@ -1,8 +1,0 @@
-@import '~normalize.css';
-body {
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-}
-.leaflet-container {
-    height: 400px;
-    width: 100%;
-}
