@@ -26,7 +26,7 @@ views over Huddersfield and surrounding countryside. If the tower is open, which
 often at weekends and school holidays, it is really well worth going up to the top for even
 better views and to look at the plate describing the distant places you can see.
 
-
+![The iconic Victoria Tower  Overlooking Huddersfield]({{ '/assets/images/castle-hill.jpg' | relative_url }})
 
 
 

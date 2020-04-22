@@ -17,4 +17,6 @@ reach the renamed Algy Arms pub. Time for a pint? After the drink, nip back down
 Holmfirth ready for the next climb or walk around Holmfirth famed for the “Last of the
 Summer Wine” television show.
 
+![Sid’s Cafe from “Last of the Summer Wine” tv series]({{ '/assets/images/sids-cafe.jpg' | relative_url }})
+
 

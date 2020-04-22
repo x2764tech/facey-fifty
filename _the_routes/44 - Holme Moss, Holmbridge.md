@@ -30,6 +30,8 @@ The Holme Valley Wheelers use this final ascent for their winter hill climb. The
 very fast times on the Strava app for you to compare yourself against others including the
 professional riders from the “tour”.
 
+![Emley Moor Mast from Holme Moss]({{ '/assets/images/view-from-holme-moss.jpg' | relative_url }})
+
 > Many people call this
 the “Daddy” of them all
 around this neck of the
@@ -38,3 +40,4 @@ woods.
 here is your chance to
 make up your own mind!!
 
+![Holme Moss]({{ '/assets/images/holme-moss-sign.jpg' | relative_url }})

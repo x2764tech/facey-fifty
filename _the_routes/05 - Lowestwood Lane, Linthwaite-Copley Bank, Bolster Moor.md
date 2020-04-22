@@ -13,3 +13,5 @@ Turn right at the traffic lights in Linthwaite (just after climb No 4), pass the
 The first part of the climb is very gentle and goes under the railway bridge where it suddenly kicks up. As you climb you get good views of the Titanic Mill and the other side of the valley. 
 
 When you approach the left hand bend it kicks up again to around 15%. When you reach the “T” junction turn right and then first left approximately 100yards up the road and straight across the small crossroads. The road is much flatter here and follows the contour around to the left with far reaching views to your right. You will get a view of a mill to your right as you hit the last steep section around 14% up to Bolster Moor Chapel at a crossroad where the climb finishes. Well done, it is a tough climb, now soak up the glorious views or go the farm shop just 50 yards further on for a café stop!!
+
+![Titanic Mill]({{ '/assets/images/titanic-mill.jpg' | relative_url }})
